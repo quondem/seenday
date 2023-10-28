@@ -41,12 +41,12 @@
             </div>
             <p class="unload__info-download">Ссылка для скачивания архива Выгрузки (.zip):</p>
             <div class="unload__info-bottom">
-              <a :href="`https/://seenday.com/${parseNum(cardInfo[0].download_link)}`" class="unload__info-link">{{
+              <a :href="`https/://seenday.com/${parseNum(cardInfo[0].download_link)}`" class="unload__info-link link">{{
                 `https/://seenday.com/${parseNum(cardInfo[0].download_link)}`
               }}</a>
               <a
                 href="#"
-                class="unload__info-copy"
+                class="unload__info-copy span-link"
                 @click.prevent="copyLink(`https/://seenday.com/${parseNum(cardInfo[0].download_link)}`)"
                 >скопировать ссылку</a
               >
